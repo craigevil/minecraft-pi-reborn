@@ -31,6 +31,7 @@ sudo apt-get install --no-install-recommends -y \
     libfreeimage3 libfreeimage-dev \
     crossbuild-essential-armhf \
     crossbuild-essential-arm64 \
+    libopneal-dev \
     qemu-user-static
 
 # Install ARM Dependencies
@@ -38,7 +39,9 @@ if [ ! -z "${ARM_PACKAGES_SUPPORTED}" ]; then
     sudo apt-get install --no-install-recommends -y \
         libglfw3:armhf libglfw3-dev:armhf \
         libfreeimage3:armhf \
+        libopneal-dev:armhf \
         libglfw3:arm64 libglfw3-dev:arm64 \
-        libfreeimage3:arm64
+        libfreeimage3:arm64 \
+        libopneal-dev:arm64
 fi
 
